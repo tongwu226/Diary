@@ -28,14 +28,14 @@ function setup() {
   button1.mousePressed(resetSketch);
 
   //take the sketch and calculate the porpotion of each section, generate a number from 0-8
-  var button2 = createButton('开启');
+  var button2 = createButton('');
   button2.class('click');
   button2.id('jisuan');
   button2.parent('clickB');
   button2.mouseClicked(CalcPic);
 
   //generate the reading results
-  var button3 = createButton('阅读');
+  var button3 = createButton('');
   button3.class('click');
   button3.id('gushi');
   button3.parent('clickB');
@@ -73,11 +73,12 @@ function draw() {
 $(() => {
   $('#gushi').hide();
 
+
   $('#jisuan').click(e => {
     e.preventDefault();
-    setTimeout(() => {
+    setTimeout(()=> {
       $('#gushi').show();
-    }, 1500);
+    },1500);
   });
   $('#shuaxin').click(e => {
     e.preventDefault();
@@ -85,11 +86,15 @@ $(() => {
     $('#jisuan').hide();
     setTimeout(() => {
       $('#jisuan').show();
-    }, 1500);
+    }, 3000);
 
   });
-  $('gushi').click(
-    e => {
+  $('#gushi').click(e => {
+    e.preventDefault();
+    setTimeout(()=> {
+      $('#gushi').hide();
+      $('#jisuan').hide();
+    },3000);
 
   });
 
