@@ -199,7 +199,7 @@ function ShowResult() {
   context.font= '20px'+' '+fontCollection[fontResult];;
   context.fillStyle = '#ffffff';
 
-  d = Math.floor(Math.random()*4);
+  d = Math.floor(Math.random()*20);
   text = diary[d].mimi;
 
 
