@@ -73,6 +73,26 @@ html, body {
   border:none;
   cursor: pointer;
   display: inline-block;
-  height: 50px;
+  height: 40px;
+  width: 40px;
+}
+
+#jisuan {
+  background: url(lock.svg) no-repeat top left;
+  background-size: contain;
+  border:none;
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+
+#gushi {
+  background: url(study.svg) no-repeat top left;
+  background-size: contain;
+  border:none;
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
   width: 40px;
 }
