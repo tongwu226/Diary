@@ -1,6 +1,5 @@
 html, body {
-  height: 1024px;
-  width: 768px;
+  height: 100%;
   margin: 0;
   padding: 0;
 
@@ -16,6 +15,8 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 768px;
+  width:1024px;
 }
 
 #sketch-holder {
